@@ -1,0 +1,308 @@
+html 
+	{ 
+	background: url(background.jpg) no-repeat center center fixed; 
+	background-size: cover;
+	}
+
+body
+	{ 
+	font-size: 1.05em;
+	line-height: 1.25em;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: white;
+	}
+#pagewrap 
+	{
+	padding: 5px;
+	width: 100%;
+	margin: 20px auto;
+	}
+#content {
+	width: 60%;
+	float: left;
+	padding: 10px;
+	margin-left:40px;
+	margin-right: 40px;
+	margin-top: 60px;
+	border: solid #ff7f27;
+	border-radius: 20px;
+	}
+	#content img
+	{
+	margin-right: 15px;
+	float: left;
+	height: 225px;
+	padding-bottom:10px;
+	}
+	#content .logo
+	{
+	width: 50px;
+	height:40px;
+	float:right;
+	margin-right:450px;
+	}
+#content span
+	{
+	float: right;
+	}
+#middle 
+	{
+	width: 30%;
+	float: left;
+	padding: 10px;
+	margin-top: 50px;
+	margin-left: 5px;
+	}
+footer
+	{
+	clear: both;
+	padding: 0 15px;
+	}
+#content 
+	{
+	background-color: transparent;
+	}
+header, #content, #middle
+	{
+	margin-bottom: 5px;
+	}
+#middle
+	{
+	background-color: transparent;
+	}
+a 
+	{
+	color: #F59B00;
+	text-decoration: none;
+	font-weight: bold;
+	}
+a:hover
+	{
+	color: white;
+	}
+img
+	{
+	width: 40%;
+	height: auto;
+	}
+header
+	{
+	background-color: transparent;
+	width: 100%;
+	height: 76px;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid #ff7f27;
+	z-index: 1;
+	}
+#logo
+	{
+	margin: 8px;
+	float: left;
+	width: 89px;
+	height: 61px;
+	background: url(pandgbeer.png) no-repeat center;
+	display: block;
+	}
+nav 
+	{
+	float: right;
+	padding: 20px;	
+	}
+#menu-icon
+	{
+	display: none;
+	width: 40px;
+	height: 40px;
+	background: #ff7f27 url(menu-icon.png) center;
+	}
+a:hover#menu-icon 
+	{
+	background-color: #F59B00;
+	border-radius: 8px 0 8px 0;
+	}
+ul 
+	{
+	list-style: none;
+	}
+li
+	{
+	display: inline-block;
+	float: left;
+	padding: 10px
+	}
+.current 
+	{
+	color: #ff7f27;
+	}
+.details
+	{
+	font-style: italic;
+	float:left;
+	padding:10px;
+	font-size:0.9em;
+	}
+h1 
+	{
+	font-size: 2em;
+	color: #F59B00;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+	text-align: center;
+	}
+h2
+	{
+	padding-right: 120px;
+	text-align: center;
+	}
+p 
+	{
+	line-height: 1.45em;
+	margin-bottom: 20px;
+	font-size: 1.35em;
+	}
+footer
+	{
+	clear:both;
+	margin-left: 30px;
+	margin-top:90px;
+	padding:20px;
+	text-align:right;
+	width:90%;
+	color:white;
+	}
+small a
+	{
+	text-decoration:none;
+	color:white;
+	font-style: italic;
+	}
+.minislide
+	{
+	width:300px; 
+	height:650px;
+	overflow:hidden;
+	position:relative;
+	}
+.minislide .item
+	{
+	position:absolute;
+	animation:minislide 25s infinite; 
+	opacity:0;
+	width: 100%;
+	height: auto;
+	}
+ @keyframes minislide
+	{
+	25%
+		{
+		opacity:1;
+		}
+	40%
+		{
+		opacity:0;
+		}
+	} 
+.minislide .item:nth-child(1){animation-delay:0s;}
+.minislide .item:nth-child(2){animation-delay:5s;}
+.minislide .item:nth-child(3){animation-delay:10s;}
+.minislide .item:nth-child(4){animation-delay:15s;}
+.minislide .item:nth-child(5){animation-delay:20s;}
+
+.minislide .item img
+	{
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	}
+.minislide .item p
+	{
+	margin-left: 30%;
+	}
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px)
+	{
+	#pagewrap
+		{
+		width: 94%;
+		}
+	#content
+		{
+		width: 41%;
+		padding: 1%;
+		}
+	#middle
+		{
+		width: 41%;
+		padding: 1%;
+		float: right;
+		}
+	header, footer 
+		{
+		padding: 1% 4%;
+		}
+	}
+/* for 700px or less */
+@media screen and (max-width: 600px) 
+	{
+	#pagewrap
+		{
+		margin-top: 20%
+		}
+	#content
+		{
+		width: auto;
+		float: none;
+		}
+	#middle 
+		{
+		width: auto;
+		float: none;
+		}
+	header 
+		{
+		position: absolute;
+		}
+	#menu-icon 
+		{
+		display:inline-block;
+		}
+	nav ul, nav:active ul 
+		{ 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background-image: linear-gradient(to left top, black, red, orange);
+		border: 5px solid #AF5500;
+		right: 20px;
+		top: 50px;
+		width: 50%;
+		border-radius: 4px 0 4px 0
+		}
+	nav li
+		{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		}
+	nav:hover ul 
+		{
+		display: block;
+		}	
+	}
+/* for 480px or less */
+@media screen and (max-width: 480px)
+	{
+	header 
+		{
+		height: auto;
+		}
+	h1 
+		{
+		font-size: 2em;
+		}
+	}

@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111739020-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111739020-1');
+</script>
+
+	<meta charset="utf-8">
+	<title>P&amp;G Wholesale</title>
+	<meta name="description" content="P&G Wholesale">
+	<meta name="keywords" content="beer, drinking, alcohol, brewery, craft beer">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="pagewrap">
+
+	<header>
+		<meta name="description" content="P&G Wholesale">
+		<meta name="keywords" content="beer, drinking, alcohol, brewery, craft beer">
+		<a href="index.html" id="logo"></a>
+      	<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+		  	<li><a href="index.html" class="current">Home</a></li>
+		  	<li><a href="products.html">Products</a></li>
+		  	<li><a href="about_us.html">About us</a></li>
+		  	<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+		
+	<section id="content">
+	<h1>Welcome to P&amp;G Wholesale</h1>
+	<p><meta name="description" content="P&G Wholesale">
+	<meta name="keywords" content="beer, drinking, alcohol, brewery, craft beer">
+	&nbsp;&nbsp;&nbsp;We would like to introduce our company to you.</p>
+	<p><meta name="description" content="P&G Wholesale">
+	<meta name="keywords" content="beer, drinking, alcohol, brewery, craft beer">
+	&nbsp;&nbsp;&nbsp;P&amp;G Wholesale is fully licensed beer wholesaling company
+	registered in Ireland. We are proud to introduce one of the finest
+	lithuanian beers to the irish market. Over the coming months we are planning
+	to add a range of premium imported beers.</p>
+	<p><meta name="description" content="P&G Wholesale">
+	<meta name="keywords" content="beer, drinking, alcohol, brewery, craft beer">
+	&nbsp;&nbsp;&nbsp;If you are interested in getting our products to your stores, please let us know and we will bring a few samples to you.
+	If you have any questions, do not hesitate to <a href="contact.html" target="_blank">contact us</a>.<br></p><br>
+	<p id="signature">Best Regards,<br>Gedas Gaubys, CEO</p>
+	</section>
+	
+	<section id="middle">
+<a href="products.html#beer_way" target="_blank" class="slider"><img src="alaus_kelias.jpg" alt="beer 1"></a>
+<a href="products.html#birzai_beer" target="_blank" class="slider"><img src="birzieciu.jpg" alt="beer 2"></a>
+<a href="products.html#cloudy_beer" target="_blank" class="slider"><img src="drumstas.jpg" alt="beer 3"></a>
+<a href="products.html#excl_beer" target="_blank" class="slider"><img src="exclusive.png" alt="beer 4"></a>
+<a href="products.html#gira" target="_blank" class="slider"><img src="gira.png" alt="beer 5"></a>
+<a href="products.html#gluten_free" target="_blank" class="slider"><img src="gluten_free.png" alt="beer 6"></a>
+<a href="products.html#bitter_ale" target="_blank" class="slider"><img src="kartusis.png" alt="beer 7"></a>
+<a href="products.html#meister" target="_blank" class="slider"><img src="meister.jpg" alt="beer 8"></a>
+<a href="products.html#barley_beer" target="_blank" class="slider"><img src="miezinis.jpg" alt="beer 9"></a>
+<a href="products.html#non_alc" target="_blank" class="slider"><img src="non_alc.jpg" alt="beer 10"></a>
+<a href="products.html#1410" target="_blank" class="slider"><img src="numeric.jpg" alt="beer 11"></a>
+<a href="products.html#occ_beer" target="_blank" class="slider"><img src="proginis.jpg" alt="beer 12"></a>
+<a href="products.html#select_beer" target="_blank" class="slider"><img src="rinktinis.jpg" alt="beer 13"></a>
+<a href="products.html#old_cellar" target="_blank" class="slider"><img src="seno_rusio.jpg" alt="beer 14"></a>
+<a href="products.html#sidras" target="_blank" class="slider"><img src="sidras.jpg" alt="beer 15"></a>
+<a href="products.html#dark_beer" target="_blank" class="slider"><img src="tamsusis.jpg" alt="beer 16"></a>
+<a href="products.html#traditional" target="_blank" class="slider"><img src="tradicinis.jpg" alt="beer 17"></a>
+<a href="products.html#trad_beer" target="_blank" class="slider"><img src="traditional.png" alt="beer 18"></a>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	</section>
+	
+	<footer>
+	<hr>
+	<small>copyrigt &copy; 2017 <a href="index.html">P&amp;G Wholesale</a><br>
+	Designed by Peter Zubal</small>
+	</footer>
+
+	</div>
+</body>
+</html>
